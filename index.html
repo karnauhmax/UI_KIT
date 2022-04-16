@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/air-datepicker.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Could be removed -->
+  <link rel="stylesheet" href="css/additional.css">
+  <!-- Could be removed -->
+  <title>UI KIT</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner container">
+
+      <div class="personal">
+        <a href="#" class="personal__notifications"></a>
+        <div class="personal__info" data-popup-parent>
+          <a href="#" class="personal__name">
+            Анастасия
+          </a>
+          <a href="#" class="personal__photo _ibg" data-popup-open>
+            <img src="img/photo.jpg" alt="Your Photo">
+          </a>
+          <a href="#" class="personal__settings" data-popup-open></a>
+          <div class="popupmenu personal__popupmenu">
+            <a href="#" class="popupmenu__close" data-popup-close></a>
+            <div class="personal__action personal__action-edit">
+              <a href="#">
+                Редактирование профиля
+              </a>
+            </div>
+            <div class="personal__action personal__action-tasks">
+              <a href="#">
+                Мои таски
+              </a>
+            </div>
+            <div class="personal__action personal__action-teams ">
+              <a href="#">
+                Мои команды
+              </a>
+            </div>
+            <div class="personal__action personal__action-pro">
+              <a href="#">
+                Pro акаунт
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+  <div class="global__wrapper">
+    <aside class="menu">
+      <a href="#" class="menu__logo">
+        <img src="img/logo.svg" alt="Logo">
+      </a>
+      <h1 class="menu__title">
+        Мои проекты
+      </h1>
+      <ul class="menu__list">
+        <li>
+          <a href="#" class="menu__project">
+            Проект 1
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__project">
+            Проект 2
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__project">
+            Проект 3
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__project">
+            Проект 4
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__project">
+            Проект 11111111111
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__project">
+            Проект 7678899
+          </a>
+        </li>
+        <li>
+          <a href="#" class="menu__project">
+            Длинное название нового проекта
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="add-btn"></a>
+    </aside>
+    <main class="main">
+      <!-- buttons -->
+      <section class="buttons container">
+
+        <h1 class="title">Кнопки</h1>
+        <a href="#" class="previous-link">
+          Назад
+        </a>
+        <a href="#" class=" primary-btn btn">
+          Создать встречу
+        </a>
+
+        <a href="#" class="btn" disabled>
+          Изменить пароль
+        </a>
+
+        <a href="#" class=" btn-with-plus btn">Добавить секцию</a>
+        <a href="#" class=" btn-with-plus btn">Добавить таск</a>
+
+
+        <a href="#" class="inline-btn">Отменить</a>
+        <a href="#" class="inline-btn">Удалить акаунт</a>
+
+      </section>
+      <!-- buttons -->
+      <!-- additional elements -->
+      <section class="elements container">
+        <h1 class="title">
+          Другие элементы
+        </h1>
+        <div class="elements__inner">
+
+          <!-- elements miscellaneous -->
+          <div class="elements__misc">
+            <div class="message">
+              <a href="#" class="message__text">Встречи</a>
+              <span class="message__count">1</span>
+            </div>
+            <a href="#" class="close-btn">
+            </a>
+            <a href="#" class="cancel-btn">
+            </a>
+            <label class="check">
+              <input class=" check__input" type="checkbox">
+              <span class="check__box"></span>
+            </label>
+          </div>
+          <!-- elements miscellaneous -->
+
+          <!-- elements green buttons -->
+          <div class="elements__btns">
+            <div class="primary-arrows">
+              <a href="#" class="arrow primary-arrow primary-arrow__prev">
+              </a>
+              <a href="#" class="arrow primary-arrow primary-arrow__next">
+              </a>
+            </div>
+            <div class="secondary-arrows">
+              <a href="#" class="arrow secondary-arrow secondary-arrow__next">
+              </a>
+              <a href="#" class="arrow secondary-arrow secondary-arrow__prev">
+              </a>
+            </div>
+
+            <div class="additional-arrows">
+              <a href="#" class="arrow additional-arrow additional-arrow__next">
+              </a>
+              <a href="#" class="arrow additional-arrow additional-arrow__prev">
+              </a>
+            </div>
+
+          </div>
+          <!-- elements green buttons -->
+
+
+        </div>
+      </section>
+      <!-- additional elements -->
+      <!-- fields -->
+      <section class="fields container">
+        <h1 class="title">Состояния полей</h1>
+        <div>
+          <!-- regular field -->
+          <div class="field">
+            <label class="field__label">
+              <span>Имя</span>
+              <div class="field__inner">
+                <input class="field__input" type="text" placeholder="Введите ваше имя"></input>
+              </div>
+            </label>
+          </div>
+          <!-- regular field -->
+
+          <!-- error field -->
+          <div class="field field_error">
+            <label class="field__label">
+              <span>Имя</span>
+              <div class="field__inner">
+                <input class="field__input" type="text" placeholder="Ошибка"></input>
+              </div>
+            </label>
+          </div>
+          <!-- error field -->
+
+          <!-- success field -->
+          <div class="field field_success">
+            <label class="field__label">
+              <span>Имя</span>
+              <div class="field__inner">
+                <input class="field__input" type="text" placeholder="Успешное заполнение поля"></input>
+                <span class="field__icon"></span>
+              </div>
+            </label>
+          </div>
+          <!-- success field -->
+
+          <!-- password field -->
+          <div class="field field_password">
+            <label class="field__label">
+              <span>Пароль</span>
+              <div class="field__inner">
+                <input class="field__input" type="password" placeholder="Придумайте пароль для акаунта"></input>
+                <span class="field__icon"></span>
+              </div>
+            </label>
+          </div>
+          <!-- password field -->
+
+          <!-- shown password field -->
+          <div class="field field_password field_password-shown">
+            <label class="field__label">
+              <span>Пароль</span>
+              <div class="field__inner">
+                <input class="field__input" type="text" placeholder="Придумайте пароль для акаунта"></input>
+                <span class="field__icon"></span>
+              </div>
+            </label>
+          </div>
+          <!-- shown password field -->
+
+
+        </div>
+      </section>
+      <section class="inputs container">
+        <h1 class="title">Вкладки</h1>
+        <div class="profile">
+          <div class="profile__info">
+            <a href="#" class="profile__img _ibg">
+              <img src="img/photo-2.png" alt="Your Photo">
+            </a>
+            <a href="#" class="profile__name">
+              Кристина Иванова
+            </a>
+          </div>
+          <a class="cancel-btn" href="#">
+          </a>
+        </div>
+        <div class="card-info">
+          <div class="card-info__content">
+            <a href="#" class="close-btn card-info__close-btn"></a>
+            <p class="card-info__date">
+              08/11/20
+            </p>
+            <a href="#" class="card-info__title">
+              Изменения месячного плана
+            </a>
+            <div class="card-info__time">
+              <p class="card-info__hours card-info__time-item">12:30</p>
+              <p class="card-info__duration card-info__time-item">1 час 20 минут</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="card-todo">
+          <div class="card-todo__content">
+            <a href="#" class="close-btn card-todo__close-btn"></a>
+
+            <div class="card-todo__info">
+              <a href="#" class="card-todo__title">Устранение ошибок</a>
+              <div class="card-todo__time">
+                <p class="card-todo__date  card-todo__time-item">9/11/20</p>
+                <p class="card-todo__hours card-todo__time-item">12:30</p>
+
+              </div>
+            </div>
+            <div class="card-todo__issue">
+              <p class="card-todo__issue-status">Проблема решена Проблема решена Проблема решена Проблема решена
+                Проблема решена Проблема решена </p>
+              <label class="check">
+                <input class=" check__input" type="checkbox">
+                <span class="check__box card-todo__check-box"></span>
+              </label>
+            </div>
+            <div class="card-todo__issue">
+              <p class="card-todo__issue-status">Проблема решена</p>
+              <label class="check">
+                <input class=" check__input" type="checkbox">
+                <span class="check__box card-todo__check-box"></span>
+              </label>
+            </div>
+            <div class="card-todo__issue">
+              <p class="card-todo__issue-status">Проблема решена</p>
+              <label class="check">
+                <input class=" check__input" type="checkbox">
+                <span class="check__box card-todo__check-box"></span>
+              </label>
+            </div>
+          </div>
+
+        </div>
+        <div class="comment">
+          <div class="comment__profile">
+            <a href="#" class="comment__img _ibg">
+              <img src="img/photo-3.png" alt="Your Photo">
+            </a>
+            <a href="#" class="comment__name">
+              Иван Иванов
+            </a>
+            <p class="comment__time">
+              10:20
+            </p>
+          </div>
+          <div class="comment__field">
+            <p class="comment__text">
+              Готовый комментарий по задаче
+            </p>
+          </div>
+          <div class="field">
+            <textarea class="field__input" placeholder="Напишите что нибудь..."></textarea>
+          </div>
+        </div>
+      </section>
+      <section class="tasks container">
+        <h1 class="title">Виды тасков</h1>
+        <div class="tasks__inner">
+          <!-- Task card -->
+          <div class="task-card" data-popup-parent>
+            <a href="#" class="task-card__settings" data-popup-open></a>
+
+            <div class="task-card__header">
+              <div class="task-card__tags">
+                <a href="#" class="task-card__tag task-card__tag-green"></a>
+                <a href="#" class="task-card__tag task-card__tag-purple"></a>
+                <a href="#" class="task-card__tag task-card__tag-purple"></a>
+                <a href="#" class="task-card__tag task-card__tag-purple"></a>
+                <a href="#" class="task-card__tag task-card__tag-purple"></a>
+              </div>
+              <div class="task-card__title">
+                Название таска таска таска таска таска
+              </div>
+
+              <p class="task__description">
+                Task descr
+              </p>
+            </div>
+
+            <div class="task-card__body">
+              <div class="task-card__row">
+                <div class="task-card__textline">
+                  <p>Исполнитель:</p>
+                </div>
+                <div class="task-card__info">
+                  <a href="#" class="task-card__avatar _ibg">
+                    <img src="img/user-small.jpg" alt="user">
+                  </a>
+                  <a href="#" class="task-card__avatar _ibg">
+                    <img src="img/user-small.jpg" alt="user">
+                  </a>
+                  <a href="#" class="task-card__avatar _ibg">
+                    <img src="img/user-small.jpg" alt="user">
+                  </a>
+                </div>
+              </div>
+              <div class="task-card__row">
+                <div class="task-card__textline">
+                  <p>Приоритет:</p>
+                </div>
+                <a href="#" class="priority-label priority-label_hard">
+                  Hard
+                </a>
+              </div>
+              <div class="task-card__row">
+                <div class="task-card__textline">
+                  <p>Дедлайн:</p>
+                </div>
+                <div class="task-card__deadline">
+                  04/11/2020
+                </div>
+              </div>
+            </div>
+
+            <div class="task-card__footer">
+              <div class="task-card__footer-item task-card__footer-item_comments">
+                +259
+              </div>
+              <div class="task-card__footer-item task-card__footer-item_messages">
+                +259
+              </div>
+              <div class="task-card__footer-item task-card__footer-item_questions">
+                +259
+              </div>
+            </div>
+
+            <div class="task-card__popupmenu popupmenu">
+              <a href="#" class="popupmenu__close" data-popup-close></a>
+              <div class="task-card__action task-card__action-edit">
+                <a href="#">Редактирование таскa</a>
+              </div>
+              <div class="task-card__action task-card__action-remove">
+                <a href="#">Удалить таск</a>
+              </div>
+            </div>
+
+          </div>
+          <!-- Task card -->
+
+          <!-- Task card small -->
+          <div class="task-card task-card__small">
+            <p class="task-card__title">
+              <p class="task-card__title">Название таска</p>
+            </p>
+            <div class="task__card-priorities">
+              <a class="priority-label priority-label_hard" href="#">
+                Hard
+              </a>
+            </div>
+
+          </div>
+          <!-- Task card small -->
+
+          <!-- Task card medium -->
+          <div class="task-card task-card__medium">
+            <div class="task-card__header">
+              <div class="task-card__tags">
+                <a href="#" class="task-card__tag task-card__tag-purple"></a>
+              </div>
+              <div class="task-card__title">
+                Название таска
+              </div>
+            </div>
+            <div class="task-card__body">
+              <p class="task-card__description">
+                Проект 1
+              </p>
+              <div class="task-card__priorities">
+                <a href="#" class="task-card__priority mini-priority__label mini-priority__medium"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Task card medium -->
+          <!-- Task card extra -->
+
+
+
+          <div class="task-card task-card__extra">
+            <div class="task-card__header">
+              <div class="task-card__tags">
+                <a href="#" class="task-card__tag task-card__tag-purple">
+                </a>
+
+              </div>
+              <p class="task-card__title">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eum nemo deserunt? Corporis dolore
+                distinctio ea quibusdam eveniet, eos, temporibus nemo ullam ipsam quas blanditiis!
+              </p>
+              <p class="task__description">
+                Название таска
+              </p>
+            </div>
+          </div>
+
+
+
+          <!-- Task card extra -->
+
+          <!-- Taskline -->
+          <div class="taskline">
+            <div class="taskline__info">
+              <a href="#" class="number-btn taskline__number">
+                1123123
+              </a>
+              <div class="taskline__priorities">
+
+                <a href="#" class="taskline__priority taskline__priority-hard"></a>
+                <a href="#" class="taskline__priority taskline__priority-hard"></a>
+
+              </div>
+              <a href="#" class="taskline__title">
+                Название таска Название таска
+              </a>
+            </div>
+            <div class="taskline__team">
+              <a href="#" class="btn taskline__btn">
+                Команда 1
+
+              </a>
+              <p class="taskline__code">
+                Т1S-2101
+              </p>
+            </div>
+          </div>
+          <!-- Taskline -->
+
+        </div>
+      </section>
+      <section class="choicez container">
+        <h1 class="elements__title">Choices</h1>
+
+        <!-- Single choice -->
+        <div class="custom-select">
+          <select name="choice" class="js-choice">
+            <option value="option-1"></option>
+            <option value="option-2"></option>
+          </select>
+        </div>
+        <!-- Single choice END-->
+
+        <!-- Multiple choice -->
+        <div class="custom-select">
+          <select multiple name="choice" class="js-choice">
+            <option data-bg="red" selected value="Кристина Иванова"></option>
+            <option value="option-5"></option>
+            <option value="option-6"></option>
+            <option value="option-7"></option>
+          </select>
+        </div>
+        <!-- Multiple choice END-->
+
+        <!-- Dates Range -->
+        <div class="dates">
+          <div class="field field_date">
+            <input class="field__input" id="dateMin" placeholder="01.01.2021" type="text" autocomplete="off">
+          </div>
+          <div class="field field_date">
+            <input class="field__input" id="dateMax" placeholder="01.01.2021" type="text" autocomplete="off">
+          </div>
+        </div>
+        <!-- Dates Range END-->
+
+        <!-- Choice list single -->
+        <div class="custom-select">
+          <div class="custom-select__label">
+            Приоритет
+          </div>
+          <select class="custom-single">
+            <option value="hard"></option>
+            <option value="medium"></option>
+            <option value="low"></option>
+          </select>
+        </div>
+        <!-- Choice list single -->
+
+        <!-- Choice list single -->
+        <div class="custom-select custom-select_large-text">
+          <select class="custom-single">
+            <option value="Проект 1"></option>
+            <option value="Проект 2"></option>
+            <option value="Проект 3"></option>
+          </select>
+        </div>
+        <!-- Choice list single -->
+
+        <!-- Choice list multiple -->
+        <div class="custom-select custom-select_small filter-select">
+          <select multiple class="labels-select custom-multiple">
+            <option selected value="дедлайну"></option>
+            <option value="приоритету"></option>
+            <option value="дедлайну"></option>
+            <option value="приоритету"></option>
+            <option value="дедлайну"></option>
+            <option value="дедлайну"></option>
+          </select>
+        </div>
+        <!-- Choice list multiple -->
+
+        <!-- Multiple TAGS choice -->
+        <div class="custom-select custom-select_tags">
+          <div class="custom-select__label">
+            Теги
+          </div>
+          <select multiple name="choice" id="custom-tags-select">
+            <option value="hard"></option>
+            <option value="semihard"></option>
+            <option value="medium"></option>
+            <option value="low"></option>
+            <option value="superlow"></option>
+            <option value="zero"></option>
+          </select>
+        </div>
+        <!-- Multiple TAGS choice END-->
+
+        <!-- Kanban view -->
+        <div class="kanban-view">
+          <div class="kanban-view__title">
+            Вид Kanban
+          </div>
+
+          <div class="custom-select custom-select_small kanban-type-select">
+            <select single class="labels-select custom-single">
+              <option selected value="Изменить вид проекта"></option>
+              <option value="проект"></option>
+              <option value="проект"></option>
+              <option value="проект"></option>
+              <option value="проект"></option>
+              <option value="проект"></option>
+            </select>
+          </div>
+
+          <div class="custom-select custom-select_small team-select">
+            <select single class="labels-select custom-single">
+              <option selected value="команда 1"></option>
+              <option value="команда 1"></option>
+              <option value="команда 1"></option>
+              <option value="команда 1"></option>
+              <option value="команда 1"></option>
+              <option value="команда 1"></option>
+            </select>
+          </div>
+        </div>
+        <!-- Kanban view -->
+
+        <!-- Bugs select-->
+        <div class="custom-select custom-select_small bugs-select">
+          <select single class="labels-select custom-single">
+            <option selected value="Изменить вид проекта"></option>
+            <option value="проект"></option>
+            <option value="проект"></option>
+            <option value="проект"></option>
+            <option value="проект"></option>
+            <option value="проект"></option>
+          </select>
+        </div>
+        <!-- Bugs select -->
+
+      </section>
+    </main>
+  </div>
+
+  <script src="js/air-datepicker.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

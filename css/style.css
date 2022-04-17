@@ -7,6 +7,7 @@
   --text-accent: #959595;
   --text-additional: #8A8A8A;
   --text-light: #ECECEC;
+  --elements-light: #DEDEDE;
   --white-color: #FFFFFF;
   --input-border: #B1B1B1;
   --placeholder: #D2D2D2;
@@ -120,7 +121,6 @@ img {
 }
 
 button {
-
   margin: 0;
   padding: 0;
   border: none;
@@ -155,7 +155,6 @@ button {
   display: flex;
   flex-direction: column;
   padding: 32px 28px;
-  outline: 1px solid red;
   width: 100%;
   max-width: 200px;
   background-image: url("../img/menu.jpg");
@@ -212,16 +211,10 @@ button {
 }
 
 .personal__notifications {
-  display: inline-block;
   margin-right: 40px;
-  width: 42px;
-  height: 42px;
-  border-radius: 4px;
-  background-image: url("../img/bell.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-color: var(--button-accent)
 }
+
+
 
 .personal__info {
   display: flex;
@@ -253,10 +246,10 @@ button {
   background-position: center center;
 }
 
+
 .personal__popupmenu {
   bottom: 0;
   right: 0;
-
   transform: translateY(100%);
   min-width: 266px;
   z-index: 25;
@@ -269,6 +262,10 @@ button {
   background-size: 15px;
   background-position: center left;
   background-repeat: no-repeat;
+}
+
+.personal__action:hover {
+  text-decoration: underline;
 }
 
 .personal__action:not(:last-child) {
@@ -324,10 +321,10 @@ button {
   transition: var(--transition);
   min-width: 250px;
   max-width: 300px;
-  white-space: nowrap;
 }
 
 .add-btn {
+  display: inline-block;
   width: 45px;
   height: 45px;
   background-color: var(--button-accent);
@@ -335,6 +332,11 @@ button {
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 4px;
+  transition: var(--transition);
+}
+
+.add-btn:hover {
+  opacity: 0.7;
 }
 
 .primary-btn {
@@ -399,7 +401,6 @@ button {
 
 .previous-link {
   font-weight: 600;
-
   color: var(--button-accent);
   position: relative;
   padding-left: 30px;
@@ -429,7 +430,15 @@ button {
   background-image: url("../img/cancel.svg");
   background-position: center center;
   background-repeat: no-repeat;
+  transition: var(--transition);
 }
+
+.cancel-btn:hover {
+  opacity: 0.7;
+}
+
+
+
 
 .close-btn {
   display: inline-block;
@@ -438,6 +447,27 @@ button {
   background-image: url("../img/close.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  transition: var(--transition);
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+}
+
+.notification-btn {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  background-image: url("../img/bell.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: var(--button-accent);
+  transition: var(--transition);
+}
+
+.notification-btn:hover {
+  opacity: 0.7;
 }
 
 /* buttons styles */
@@ -495,12 +525,16 @@ button {
   background-position: center center;
   background-color: var(--button-accent);
   border-radius: 4px;
-
 }
 
 .primary-arrow {
   width: 40px;
   height: 40px;
+  transition: var(--transition);
+}
+
+.primary-arrow:hover {
+  opacity: 0.7;
 }
 
 .primary-arrow__prev {
@@ -590,6 +624,11 @@ button {
 .secondary-arrow {
   width: 30px;
   height: 30px;
+  transition: var(--transition);
+}
+
+.secondary-arrow:hover {
+  opacity: 0.7;
 }
 
 .secondary-arrow__next {
@@ -603,7 +642,14 @@ button {
 .additional-arrow {
   width: 25px;
   height: 25px;
+  transition: var(--transition);
 }
+
+.additional-arrow:hover {
+  opacity: 0.7;
+}
+
+
 
 .additional-arrow:not(:last-child) {
   margin-right: 10px;
@@ -643,7 +689,6 @@ button {
 }
 
 
-.inputs {}
 
 .profile {
   display: flex;
@@ -660,12 +705,24 @@ button {
 
 .profile__name {
   font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.profile__name:hover {
+  border-bottom: 1px solid var(--title-accent);
 }
 
 .profile__img {
   margin-right: 16px;
   flex: 0 0 45px;
   height: 45px;
+  transition: var(--transition);
+}
+
+.profile__img:hover {
+  transform: scale(1.1);
+
 }
 
 .card-info {
@@ -685,7 +742,6 @@ button {
   top: 16px;
 }
 
-.card-info__content {}
 
 .card-info__date {
   color: var(--text-accent);
@@ -701,9 +757,13 @@ button {
   display: inline-block;
   font-weight: 700;
   margin-bottom: 8px;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition);
 }
 
-
+.card-info__title:hover {
+  border-bottom: 1px solid var(--title-accent);
+}
 
 .card-info__time-item {
   color: var(--text-accent);
@@ -799,10 +859,21 @@ button {
   margin-right: 12px;
   overflow: hidden;
   border-radius: 50%;
+  transition: var(--transition);
+}
+
+.comment__img:hover {
+  transform: scale(1.1);
 }
 
 .comment__name {
   margin-right: 12px;
+  transition: var(--transition);
+  border-bottom: 1px solid transparent;
+}
+
+.comment__name:hover {
+  border-bottom: 1px solid var(--title-accent);
 }
 
 .comment__time {
@@ -1305,7 +1376,15 @@ button {
   overflow: hidden;
   margin-right: 4px;
   margin-bottom: 4px;
+  transition: var(--transition);
 }
+
+
+.task-card__avatar:hover {
+  transform: scale(1.1);
+}
+
+
 
 .task-card__priorities {
   width: 100%;
@@ -1323,7 +1402,6 @@ button {
 .mini-priority__medium {
   background-color: var(--medium-priority);
 }
-
 
 
 .priority-label {
@@ -1398,6 +1476,7 @@ button {
 .task-card__medium .task-card__body {
   display: flex;
   justify-content: space-between;
+  margin-bottom: unset;
 }
 
 .task-card__medium .task-card__header {
@@ -1416,8 +1495,12 @@ button {
   margin-right: 5px;
 }
 
+/* Extra task card styles */
+
 .task-card__extra {
   max-width: 160px;
+  min-height: 180px;
+  justify-content: space-between;
 }
 
 .task-card__extra .task-card__header {
@@ -1428,9 +1511,42 @@ button {
   justify-content: flex-end;
 }
 
+.task-card__extra .task-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task-card__extra .task-card__icon {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.task-card__extra .task-card__date {
+  margin-right: 10px;
+  color: var(--text-accent);
+  max-width: 75px;
+}
+
+.task-card__extra .task-card__priority:not(:last-child) {
+  margin-right: 5px;
+  margin-bottom: 5%;
+}
+
+.task-card__extra .task-card__priorities {
+  width: auto;
+}
+
+.task-card__extra .task-card__body {
+  margin-bottom: unset;
+}
+
+/* Extra task card styles */
 
 
 
+
+/* Taskline styles */
 
 .taskline {
   display: flex;
@@ -1514,7 +1630,7 @@ button {
   background-color: var(--superlow-priority);
   border: 1px solid transparent;
   overflow: hidden;
-  min-width: 80px;
+  min-width: 100px;
   padding: 8px;
   font-size: 14px;
   max-width: 250px;
@@ -1534,6 +1650,11 @@ button {
   background-color: var(--hard-priority);
 }
 
+/* Taskline styles */
+
+/* Popup styles */
+
+
 .popupmenu {
   position: absolute;
   opacity: 0;
@@ -1551,6 +1672,7 @@ button {
   opacity: 1;
   visibility: visible;
 }
+
 
 .popupmenu__close {
   position: absolute;
@@ -1598,10 +1720,189 @@ button {
 .personal__popupmenu {
   bottom: 0;
   right: 0;
-
   transform: translateY(100%);
   min-width: 266px;
   z-index: 25;
   padding: 25px 30px 25px 1.2rem;
 
 }
+
+
+
+/* Popup styles */
+
+/* expandable menu styles */
+
+.expandable-menu__btn {
+  background-size: 16px;
+  border-radius: 9px;
+}
+
+.expandable-menu__close {
+  top: 10px;
+  right: 10px;
+}
+
+.expandable-menu__action {
+  min-width: 170px;
+  max-width: 200px;
+  padding: 12px 12px 12px 30px;
+  border: 1px solid var(--button-accent);
+  background-color: var(--white-color);
+  color: var(--button-accent);
+}
+
+.expandable-menu__action::before {
+  background-image: url("../img/hovered-add.svg");
+
+}
+
+.expandable-menu__action:hover {
+  background-color: var(--button-accent);
+  color: var(--white-color);
+  border: 1px solid transparent;
+}
+
+.expandable-menu__action:hover::before {
+  background-image: url("../img/add.svg");
+}
+
+.expandable-menu__action:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.expandable-menu__popup {
+  max-width: 220px;
+  overflow: hidden;
+}
+
+
+/* expandable menu styles */
+
+
+
+/* notification menu styles */
+.notification-menu {}
+
+.notification-menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--elements-light);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+
+.notification-menu__item-info {
+  max-width: 240px;
+  margin-right: 10px;
+}
+
+.notification-menu__popup {
+  display: flex;
+  flex-direction: column;
+  padding: 31px 24px;
+  width: 100%;
+  max-width: 363px;
+}
+
+.notification-menu__close {
+  right: 8px;
+  top: 8px;
+}
+
+.notification-menu__date {
+  margin-bottom: 8px;
+}
+
+.notification__menu-title {
+  font-size: var(--maintext-size);
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--title-accent);
+}
+
+.notification__menu-photo {
+  flex: 0 0 50px;
+}
+
+.notification__menu-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.notifiaction__menu-link {
+  border-bottom: 1px solid var(--text-accent);
+  transition: var(--transition);
+  margin-bottom: 5px;
+}
+
+.notifiaction__menu-link:hover {
+  border-bottom: 1px solid transparent;
+}
+
+.notifiaction__menu-link:not(:last-child) {
+  margin-right: 16px;
+}
+
+.notification-menu__item-btn {
+  min-width: 200px;
+  max-width: 250px;
+  color: var(--button-accent);
+  font-weight: 600;
+  border: 1px solid var(--button-accent);
+  margin: 0 auto;
+}
+
+.notification-menu__item-btn:hover {
+  color: var(--white-color);
+  background-color: var(--button-accent);
+}
+
+.notification__menu-photo {
+  flex: 0 0 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.notification__menu-photo:hover {
+  transform: scale(1.1);
+}
+
+
+/* notification menu styles */
+
+/* projet menu styles */
+
+/* .project-menu__popupmenu {
+  padding: 32px;
+}
+
+.project-menu__close {
+  top: 7px;
+  right: 7px;
+}
+
+.project-menu__action {
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.project-menu__header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--text-accent);
+}
+
+.project-menu__check {
+  position: relative;
+  padding-left: 15px;
+} */
+
+
+/* projet menu styles */

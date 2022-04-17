@@ -6,11 +6,11 @@
   margin-right: 25px;
 }
 
-.btn[disabled] {
+.buttons .btn[disabled] {
   margin-right: 25px;
 }
 
-.btn-with-plus {
+.buttons .btn-with-plus {
   margin-right: 25px;
 }
 
@@ -48,9 +48,6 @@
   margin-top: 50px;
 }
 
-.header {
-  outline: 1px solid red;
-}
 
 .inputs {
   padding-top: 50px;

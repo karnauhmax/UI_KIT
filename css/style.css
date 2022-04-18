@@ -250,6 +250,8 @@ button {
 .personal__popupmenu {
   bottom: 0;
   right: 0;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
   transform: translateY(100%);
   min-width: 266px;
   z-index: 25;
@@ -374,6 +376,7 @@ button {
   position: absolute;
   left: 15px;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -415,6 +418,7 @@ button {
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   top: 50%;
+  -webkit-transform: translateY(-28%);
   transform: translateY(-28%);
   left: 0;
 }
@@ -451,6 +455,7 @@ button {
 }
 
 .close-btn:hover {
+  -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -597,6 +602,7 @@ button {
   height: 20px;
   top: 50%;
   right: 14px;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   opacity: 0;
 }
@@ -721,6 +727,7 @@ button {
 }
 
 .profile__img:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 
 }
@@ -863,6 +870,7 @@ button {
 }
 
 .comment__img:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -922,6 +930,7 @@ button {
   background-color: var(--button-accent);
   top: 50%;
   right: 8px;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   pointer-events: none;
 }
@@ -1043,6 +1052,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -1072,7 +1082,7 @@ button {
   border: 1px solid var(--input-border);
   border-radius: 2px;
   margin-right: 16px;
-  transform: translateY(3px);
+  -webkit-transform: translateY(3px) transform: translateY(3px);
 }
 
 .choices__list--dropdown .choices__item--selectable::after,
@@ -1083,6 +1093,7 @@ button {
   top: 50%;
   width: 20px;
   height: 20px;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   border-radius: 3px;
   opacity: 1;
@@ -1229,6 +1240,7 @@ button {
   left: 8px;
   width: 20px;
   height: 20px;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   background-image: url("../img/bx-calendar.svg");
   background-position: center center;
@@ -1381,6 +1393,7 @@ button {
 
 
 .task-card__avatar:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -1694,6 +1707,7 @@ button {
   min-width: 225px;
   right: 0;
   top: 0;
+  -webkit-transform: translateX(calc(100% + 20px));
   transform: translateX(calc(100% + 20px));
 }
 
@@ -1720,6 +1734,7 @@ button {
 .personal__popupmenu {
   bottom: 0;
   right: 0;
+  -webkit-transform: translateY(100%);
   transform: translateY(100%);
   min-width: 266px;
   z-index: 25;
@@ -1885,6 +1900,7 @@ button {
 }
 
 .notification__menu-photo:hover {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 

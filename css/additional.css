@@ -82,5 +82,9 @@
 }
 
 .expandable-menu {
-  margin-bottom: 50px;
+  margin-left: auto;
+}
+
+.notification-menu {
+  margin: 0 auto;
 }

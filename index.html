@@ -660,8 +660,8 @@
         <div class="notification-menu" data-popup-parent>
           <a href="" class="notification-btn notification-menu__btn" data-popup-open></a>
           <div class="popupmenu notification-menu__popup">
+            <a href="#" class="popupmenu__close notification-menu__close" data-popup-close=""></a>
             <div class="notification-menu__item">
-              <a href="#" class="popupmenu__close notification-menu__close" data-popup-close></a>
               <div class="notification-menu__item-info">
                 <p class="notification-menu__date">
                   12:30
@@ -678,7 +678,7 @@
                   </a>
                 </div>
               </div>
-              <a href="#" class="notification__menu-photo _ibg">
+              <a href="#" class="notification__menu-photo personal__photo _ibg">
                 <img src="img/photo-2.png" alt="Photo">
               </a>
             </div>
@@ -699,7 +699,7 @@
                   </a>
                 </div>
               </div>
-              <a href="#" class="notification__menu-photo _ibg">
+              <a href="#" class="notification__menu-photo personal__photo _ibg">
                 <img src="img/photo-2.png" alt="Photo">
               </a>
             </div>
@@ -720,7 +720,7 @@
                   </a>
                 </div>
               </div>
-              <a href="#" class="notification__menu-photo _ibg">
+              <a href="#" class="notification__menu-photo personal__photo _ibg">
                 <img src="img/photo-2.png" alt="Photo">
               </a>
             </div>
@@ -741,28 +741,42 @@
                   </a>
                 </div>
               </div>
-              <a href="#" class="notification__menu-photo _ibg">
+              <a href="#" class="notification__menu-photo personal__photo _ibg">
                 <img src="img/photo-2.png" alt="Photo">
               </a>
             </div>
-            <a href="#" class="btn notification-menu__item-btn">
-              Очистить уведомления
-            </a>
           </div>
         </div>
 
-        <!-- <div class="project-menu" data-popup-parent>
-          <a href="#" class="project-menu__btn add-btn">
+        <div class="project-menu" data-popup-parent>
+          <a href="#" class="project-menu__btn add-btn" data-popup-open="">
           </a>
           <div class="project-menu__popupmenu popupmenu">
-            <a href="#" class="project-menu__close popupmenu__close" data-popup-close=""></a>
+            <a href="#" class="project-menu__close popupmenu__close" data-popup-close></a>
             <div class="project-menu__header">
               <a href="#" class="project-menu__action">
                 Изменить вид проекта
               </a>
             </div>
+            <div class="project-menu__popupmenu-body">
+              <label class="project-menu__check check">
+                <input class="project-menu__input check__input" type="checkbox" checked>
+                <span class="project-menu__checkbox check__box"></span>
+                Kanban
+              </label>
+              <label class="project-menu__check check">
+                <input class="project-menu__input check__input" type="checkbox">
+                <span class="project-menu__checkbox check__box"></span>
+                Gantt chart
+              </label>
+              <label class="project-menu__check check">
+                <input class="project-menu__input check__input" type="checkbox">
+                <span class="project-menu__checkbox check__box"></span>
+                Agile
+              </label>
+            </div>
           </div>
-        </div> -->
+        </div>
 
       </section>
     </main>

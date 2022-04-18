@@ -1733,6 +1733,11 @@ button {
 
 /* expandable menu styles */
 
+.expandable-menu {
+  position: relative;
+  max-width: 272px;
+}
+
 .expandable-menu__btn {
   background-size: 16px;
   border-radius: 9px;
@@ -1774,6 +1779,8 @@ button {
 .expandable-menu__popup {
   max-width: 220px;
   overflow: hidden;
+  position: absolute;
+  right: 0;
 }
 
 
@@ -1782,7 +1789,10 @@ button {
 
 
 /* notification menu styles */
-.notification-menu {}
+.notification-menu {
+  position: relative;
+  max-width: 420px;
+}
 
 .notification-menu__item {
   display: flex;
@@ -1805,6 +1815,9 @@ button {
   padding: 31px 24px;
   width: 100%;
   max-width: 363px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .notification-menu__close {

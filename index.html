@@ -116,9 +116,9 @@
           Создать встречу
         </a>
 
-        <a href="#" class="btn" disabled>
+        <button class="btn" disabled>
           Изменить пароль
-        </a>
+        </button>
 
         <a href="#" class=" btn-with-plus btn">Добавить секцию</a>
         <a href="#" class=" btn-with-plus btn">Добавить таск</a>
@@ -177,8 +177,6 @@
 
           </div>
           <!-- elements green buttons -->
-
-
         </div>
       </section>
       <!-- additional elements -->
@@ -188,65 +186,64 @@
         <div>
           <!-- regular field -->
           <div class="field">
-            <label class="field__label">
+            <div class="field__label">
               <span>Имя</span>
               <div class="field__inner">
-                <input class="field__input" type="text" placeholder="Введите ваше имя"></input>
+                <input class="field__input" type="text" placeholder="Введите ваше имя">
               </div>
-            </label>
+            </div>
           </div>
           <!-- regular field -->
 
           <!-- error field -->
           <div class="field field_error">
-            <label class="field__label">
+            <div class="field__label">
               <span>Имя</span>
               <div class="field__inner">
-                <input class="field__input" type="text" placeholder="Ошибка"></input>
+                <input class="field__input" type="text" placeholder="Ошибка">
               </div>
-            </label>
+            </div>
           </div>
           <!-- error field -->
 
           <!-- success field -->
           <div class="field field_success">
-            <label class="field__label">
+            <div class="field__label">
               <span>Имя</span>
               <div class="field__inner">
-                <input class="field__input" type="text" placeholder="Успешное заполнение поля"></input>
+                <input class="field__input" type="text" placeholder="Успешное заполнение поля">
                 <span class="field__icon"></span>
               </div>
-            </label>
+            </div>
           </div>
           <!-- success field -->
 
           <!-- password field -->
           <div class="field field_password">
-            <label class="field__label">
+            <div class="field__label">
               <span>Пароль</span>
               <div class="field__inner">
-                <input class="field__input" type="password" placeholder="Придумайте пароль для акаунта"></input>
+                <input class="field__input" type="password" placeholder="Придумайте пароль для акаунта">
                 <span class="field__icon"></span>
               </div>
-            </label>
+            </div>
           </div>
           <!-- password field -->
 
           <!-- shown password field -->
           <div class="field field_password field_password-shown">
-            <label class="field__label">
+            <div class="field__label">
               <span>Пароль</span>
               <div class="field__inner">
-                <input class="field__input" type="text" placeholder="Придумайте пароль для акаунта"></input>
+                <input class="field__input" type="text" placeholder="Придумайте пароль для акаунта">
                 <span class="field__icon"></span>
               </div>
-            </label>
+            </div>
           </div>
           <!-- shown password field -->
-
-
         </div>
       </section>
+      <!-- inputs  -->
       <section class="inputs container">
         <h1 class="title">Вкладки</h1>
         <div class="profile">
@@ -261,6 +258,7 @@
           <a class="cancel-btn" href="#">
           </a>
         </div>
+        <!-- info card  -->
         <div class="card-info">
           <div class="card-info__content">
             <a href="#" class="close-btn card-info__close-btn"></a>
@@ -277,6 +275,9 @@
             </div>
           </div>
         </div>
+        <!-- info card  -->
+
+        <!-- todo-card  -->
         <div class="card-todo">
           <div class="card-todo__content">
             <a href="#" class="close-btn card-todo__close-btn"></a>
@@ -314,6 +315,8 @@
           </div>
 
         </div>
+        <!-- todo-card  -->
+        <!-- comment  -->
         <div class="comment">
           <div class="comment__profile">
             <a href="#" class="comment__img _ibg">
@@ -335,198 +338,192 @@
             <textarea class="field__input" placeholder="Напишите что нибудь..."></textarea>
           </div>
         </div>
+        <!-- comment  -->
+
       </section>
+      <!-- inputs  -->
+
       <section class="tasks container">
         <h1 class="title">Виды тасков</h1>
-        <div class="tasks__inner">
-          <!-- Task card -->
-          <div class="task-card" data-popup-parent>
-            <a href="#" class="task-card__settings" data-popup-open></a>
+        <!-- Task card -->
+        <div class="task-card" data-popup-parent>
+          <a href="#" class="task-card__settings" data-popup-open></a>
 
-            <div class="task-card__header">
-              <div class="task-card__tags">
-                <a href="#" class="task-card__tag task-card__tag-green"></a>
-                <a href="#" class="task-card__tag task-card__tag-purple"></a>
-                <a href="#" class="task-card__tag task-card__tag-purple"></a>
-                <a href="#" class="task-card__tag task-card__tag-purple"></a>
-                <a href="#" class="task-card__tag task-card__tag-purple"></a>
-              </div>
-              <div class="task-card__title">
-                Название таска таска таска таска таска
-              </div>
-
-              <p class="task__description">
-                Task descr
-              </p>
+          <div class="task-card__header">
+            <div class="task-card__tags">
+              <a href="#" class="task-card__tag task-card__tag-green"></a>
+              <a href="#" class="task-card__tag task-card__tag-purple"></a>
+              <a href="#" class="task-card__tag task-card__tag-purple"></a>
+              <a href="#" class="task-card__tag task-card__tag-purple"></a>
+              <a href="#" class="task-card__tag task-card__tag-purple"></a>
+            </div>
+            <div class="task-card__title">
+              Название таска таска таска таска таска
             </div>
 
-            <div class="task-card__body">
-              <div class="task-card__row">
-                <div class="task-card__textline">
-                  <p>Исполнитель:</p>
-                </div>
-                <div class="task-card__info">
-                  <a href="#" class="task-card__avatar _ibg">
-                    <img src="img/user-small.jpg" alt="user">
-                  </a>
-                  <a href="#" class="task-card__avatar _ibg">
-                    <img src="img/user-small.jpg" alt="user">
-                  </a>
-                  <a href="#" class="task-card__avatar _ibg">
-                    <img src="img/user-small.jpg" alt="user">
-                  </a>
-                </div>
+            <p class="task__description">
+              Task descr
+            </p>
+          </div>
+
+          <div class="task-card__body">
+            <div class="task-card__row">
+              <div class="task-card__textline">
+                <p>Исполнитель:</p>
               </div>
-              <div class="task-card__row">
-                <div class="task-card__textline">
-                  <p>Приоритет:</p>
-                </div>
-                <a href="#" class="priority-label priority-label_hard">
-                  Hard
+              <div class="task-card__info">
+                <a href="#" class="task-card__avatar _ibg">
+                  <img src="img/user-small.jpg" alt="user">
+                </a>
+                <a href="#" class="task-card__avatar _ibg">
+                  <img src="img/user-small.jpg" alt="user">
+                </a>
+                <a href="#" class="task-card__avatar _ibg">
+                  <img src="img/user-small.jpg" alt="user">
                 </a>
               </div>
-              <div class="task-card__row">
-                <div class="task-card__textline">
-                  <p>Дедлайн:</p>
-                </div>
-                <div class="task-card__deadline">
-                  04/11/2020
-                </div>
-              </div>
             </div>
-
-            <div class="task-card__footer">
-              <div class="task-card__footer-item task-card__footer-item_comments">
-                +259
+            <div class="task-card__row">
+              <div class="task-card__textline">
+                <p>Приоритет:</p>
               </div>
-              <div class="task-card__footer-item task-card__footer-item_messages">
-                +259
-              </div>
-              <div class="task-card__footer-item task-card__footer-item_questions">
-                +259
-              </div>
-            </div>
-
-            <div class="task-card__popupmenu popupmenu">
-              <a href="#" class="popupmenu__close" data-popup-close></a>
-              <div class="task-card__action task-card__action-edit">
-                <a href="#">Редактирование таскa</a>
-              </div>
-              <div class="task-card__action task-card__action-remove">
-                <a href="#">Удалить таск</a>
-              </div>
-            </div>
-
-          </div>
-          <!-- Task card -->
-
-          <!-- Task card small -->
-          <div class="task-card task-card__small">
-            <p class="task-card__title">
-              <p class="task-card__title">Название таска</p>
-            </p>
-            <div class="task__card-priorities">
-              <a class="priority-label priority-label_hard" href="#">
+              <a href="#" class="priority-label priority-label_hard">
                 Hard
               </a>
             </div>
-
-          </div>
-          <!-- Task card small -->
-
-          <!-- Task card medium -->
-          <div class="task-card task-card__medium">
-            <div class="task-card__header">
-              <div class="task-card__tags">
-                <a href="#" class="task-card__tag task-card__tag-purple"></a>
+            <div class="task-card__row">
+              <div class="task-card__textline">
+                <p>Дедлайн:</p>
               </div>
-              <div class="task-card__title">
-                Название таска
+              <div class="task-card__deadline">
+                04/11/2020
               </div>
             </div>
-            <div class="task-card__body">
-              <p class="task-card__description">
-                Проект 1
-              </p>
+          </div>
+
+          <div class="task-card__footer">
+            <div class="task-card__footer-item task-card__footer-item_comments">
+              +259
+            </div>
+            <div class="task-card__footer-item task-card__footer-item_messages">
+              +259
+            </div>
+            <div class="task-card__footer-item task-card__footer-item_questions">
+              +259
+            </div>
+          </div>
+          <!-- task card  -->
+          <div class="task-card__popupmenu popupmenu">
+            <a href="#" class="popupmenu__close" data-popup-close></a>
+            <div class="task-card__action task-card__action-edit">
+              <a href="#">Редактирование таскa</a>
+            </div>
+            <div class="task-card__action task-card__action-remove">
+              <a href="#">Удалить таск</a>
+            </div>
+          </div>
+        </div>
+        <!-- Task card -->
+
+        <!-- Task card small -->
+        <div class="task-card task-card__small">
+          <p class="task-card__title">Название таска</p>
+          <div class="task__card-priorities">
+            <a class="priority-label priority-label_hard" href="#">
+              Hard
+            </a>
+          </div>
+
+        </div>
+        <!-- Task card small -->
+
+        <!-- Task card medium -->
+        <div class="task-card task-card__medium">
+          <div class="task-card__header">
+            <div class="task-card__tags">
+              <a href="#" class="task-card__tag task-card__tag-purple"></a>
+            </div>
+            <div class="task-card__title">
+              Название таска
+            </div>
+          </div>
+          <div class="task-card__body">
+            <p class="task-card__description">
+              Проект 1
+            </p>
+            <div class="task-card__priorities">
+              <a href="#" class="task-card__priority mini-priority__label mini-priority__medium"></a>
+            </div>
+          </div>
+        </div>
+        <!-- Task card medium -->
+        <!-- Task card extra -->
+        <div class="task-card task-card__extra">
+          <div class="task-card__header">
+            <div class="task-card__tags">
+              <a href="#" class="task-card__tag task-card__tag-purple">
+              </a>
+
+            </div>
+            <p class="task-card__title">
+              Название таска
+            </p>
+            <p class="task__description">
+              Название таска
+            </p>
+          </div>
+          <div class="task-card__body">
+            <a href="#" class="task-card__icon">
+              <img src="img/icon-clocks.svg" alt="clocks">
+            </a>
+            <div class="task-card__info">
+              <p class="task-card__date">04/11/20/82/24</p>
               <div class="task-card__priorities">
                 <a href="#" class="task-card__priority mini-priority__label mini-priority__medium"></a>
               </div>
             </div>
           </div>
-          <!-- Task card medium -->
-          <!-- Task card extra -->
-
-
-
-          <div class="task-card task-card__extra">
-            <div class="task-card__header">
-              <div class="task-card__tags">
-                <a href="#" class="task-card__tag task-card__tag-purple">
-                </a>
-
-              </div>
-              <p class="task-card__title">
-                Название таска
-              </p>
-              <p class="task__description">
-                Название таска
-              </p>
-            </div>
-            <div class="task-card__body">
-              <a href="#" class="task-card__icon">
-                <img src="img/icon-clocks.svg" alt="" srcset="">
-              </a>
-              <div class="task-card__info">
-                <p class="task-card__date">04/11/20/82/24</p>
-                <div class="task-card__priorities">
-                  <a href="#" class="task-card__priority mini-priority__label mini-priority__medium"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- Task card extra -->
-
-          <!-- Taskline -->
-          <div class="taskline">
-            <div class="taskline__info">
-              <a href="#" class="number-btn taskline__number">
-                1123123
-              </a>
-              <div class="taskline__priorities">
-
-                <a href="#" class="taskline__priority taskline__priority-hard"></a>
-                <a href="#" class="taskline__priority taskline__priority-hard"></a>
-
-              </div>
-              <a href="#" class="taskline__title">
-                Название таска Название таска
-              </a>
-            </div>
-            <div class="taskline__team">
-              <a href="#" class="btn taskline__btn">
-                Команда 1
-
-              </a>
-              <p class="taskline__code">
-                Т1S-2101
-              </p>
-            </div>
-          </div>
-          <!-- Taskline -->
-
         </div>
+        <!-- Task card extra -->
+        <!-- Taskline -->
+
+        <div class="taskline">
+          <div class="taskline__info">
+            <a href="#" class="number-btn taskline__number">
+              1
+            </a>
+            <div class="taskline__priorities">
+
+              <a href="#" class="taskline__priority taskline__priority-hard"></a>
+              <a href="#" class="taskline__priority taskline__priority-hard"></a>
+
+            </div>
+            <a href="#" class="taskline__title">
+              Название таска Название таска
+            </a>
+          </div>
+          <div class="taskline__team">
+            <a href="#" class="btn taskline__btn">
+              Команда 1
+
+            </a>
+            <p class="taskline__code">
+              Т1S-2101
+            </p>
+          </div>
+        </div>
+        <!-- Taskline -->
+
       </section>
+      <!-- choices  -->
       <section class="choicez container">
         <h1 class="elements__title">Choices</h1>
 
         <!-- Single choice -->
         <div class="custom-select">
           <select name="choice" class="js-choice">
-            <option value="option-1"></option>
-            <option value="option-2"></option>
+            <option label="option-1" value="option-1"></option>
+            <option label="option-2" value="option-2"></option>
           </select>
         </div>
         <!-- Single choice END-->
@@ -534,10 +531,10 @@
         <!-- Multiple choice -->
         <div class="custom-select">
           <select multiple name="choice" class="js-choice">
-            <option data-bg="red" selected value="Кристина Иванова"></option>
-            <option value="option-5"></option>
-            <option value="option-6"></option>
-            <option value="option-7"></option>
+            <option label="name" data-bg="red" selected value="Кристина Иванова"></option>
+            <option label="option-5" value="option-5"></option>
+            <option label="option-6" value="option-6"></option>
+            <option label="option-7" value="option-7"></option>
           </select>
         </div>
         <!-- Multiple choice END-->
@@ -559,9 +556,9 @@
             Приоритет
           </div>
           <select class="custom-single">
-            <option value="hard"></option>
-            <option value="medium"></option>
-            <option value="low"></option>
+            <option label="hard" value="hard"></option>
+            <option label="medium" value="medium"></option>
+            <option label="low" value="low"></option>
           </select>
         </div>
         <!-- Choice list single -->
@@ -569,9 +566,9 @@
         <!-- Choice list single -->
         <div class="custom-select custom-select_large-text">
           <select class="custom-single">
-            <option value="Проект 1"></option>
-            <option value="Проект 2"></option>
-            <option value="Проект 3"></option>
+            <option label="Проект 1" value="Проект 1"></option>
+            <option label="Проект 2" value="Проект 2"></option>
+            <option label="Проект 3" value="Проект 3"></option>
           </select>
         </div>
         <!-- Choice list single -->
@@ -579,12 +576,12 @@
         <!-- Choice list multiple -->
         <div class="custom-select custom-select_small filter-select">
           <select multiple class="labels-select custom-multiple">
-            <option selected value="дедлайну"></option>
-            <option value="приоритету"></option>
-            <option value="дедлайну"></option>
-            <option value="приоритету"></option>
-            <option value="дедлайну"></option>
-            <option value="дедлайну"></option>
+            <option label="deadline" selected value="дедлайну"></option>
+            <option label="priority" value="приоритету"></option>
+            <option label="deadline" value="дедлайну"></option>
+            <option label="priority" value="приоритету"></option>
+            <option label="deadline" value="дедлайну"></option>
+            <option label="deadline" value="дедлайну"></option>
           </select>
         </div>
         <!-- Choice list multiple -->
@@ -595,12 +592,12 @@
             Теги
           </div>
           <select multiple name="choice" id="custom-tags-select">
-            <option value="hard"></option>
-            <option value="semihard"></option>
-            <option value="medium"></option>
-            <option value="low"></option>
-            <option value="superlow"></option>
-            <option value="zero"></option>
+            <option label="hard" value="hard"></option>
+            <option label="semihard" value="semihard"></option>
+            <option label="medium" value="medium"></option>
+            <option label="low" value="low"></option>
+            <option label="superlow" value="superlow"></option>
+            <option label="zero" value="zero"></option>
           </select>
         </div>
         <!-- Multiple TAGS choice END-->
@@ -612,24 +609,24 @@
           </div>
 
           <div class="custom-select custom-select_small kanban-type-select">
-            <select single class="labels-select custom-single">
-              <option selected value="Изменить вид проекта"></option>
-              <option value="проект"></option>
-              <option value="проект"></option>
-              <option value="проект"></option>
-              <option value="проект"></option>
-              <option value="проект"></option>
+            <select class="labels-select custom-single">
+              <option label="Изменить вид проекта" selected value="Изменить вид проекта"></option>
+              <option label="проект" value="проект"></option>
+              <option label="проект" value="проект"></option>
+              <option label="проект" value="проект"></option>
+              <option label="проект" value="проект"></option>
+              <option label="проект" value="проект"></option>
             </select>
           </div>
 
           <div class="custom-select custom-select_small team-select">
-            <select single class="labels-select custom-single">
-              <option selected value="команда 1"></option>
-              <option value="команда 1"></option>
-              <option value="команда 1"></option>
-              <option value="команда 1"></option>
-              <option value="команда 1"></option>
-              <option value="команда 1"></option>
+            <select class="labels-select custom-single">
+              <option label="команда 1" selected value="команда 1"></option>
+              <option label="команда 1" value="команда 1"></option>
+              <option label="команда 1" value="команда 1"></option>
+              <option label="команда 1" value="команда 1"></option>
+              <option label="команда 1" value="команда 1"></option>
+              <option label="команда 1" value="команда 1"></option>
             </select>
           </div>
         </div>
@@ -637,151 +634,200 @@
 
         <!-- Bugs select-->
         <div class="custom-select custom-select_small bugs-select">
-          <select single class="labels-select custom-single">
-            <option selected value="Изменить вид проекта"></option>
-            <option value="проект"></option>
-            <option value="проект"></option>
-            <option value="проект"></option>
-            <option value="проект"></option>
-            <option value="проект"></option>
+          <select class="labels-select custom-single">
+            <option label="проект" selected value="Изменить вид проекта"></option>
+            <option label="проект" value="проект"></option>
+            <option label="проект" value="проект"></option>
+            <option label="проект" value="проект"></option>
+            <option label="проект" value="проект"></option>
+            <option label="проект" value="проект"></option>
           </select>
         </div>
         <!-- Bugs select -->
-        <div class="expandable-menu" style="margin-top: 50px;" data-popup-parent>
-          <a href="#" class="expandable-menu__btn add-btn" data-popup-open>
+
+
+      </section>
+      <!-- choices  -->
+
+      <!-- expandable-menu  -->
+      <div class="expandable-menu" data-popup-parent>
+        <a href="#" class="expandable-menu__btn add-btn" data-popup-open>
+        </a>
+        <div class="expandable-menu__popup popupmenu">
+          <a href="#" class="expandable-menu__close popupmenu__close " data-popup-close></a>
+          <a href="#" class="expandable-menu__action btn btn-with-plus">Создать проект</a>
+          <a href="#" class="expandable-menu__action btn btn-with-plus">Создать проект</a>
+          <a href="#" class="expandable-menu__action btn btn-with-plus">Создать проект</a>
+        </div>
+      </div>
+      <!-- expandable-menu  -->
+      <!-- notification menu  -->
+
+      <div class="notification-menu" data-popup-parent>
+        <a href="" class="notification-btn notification-menu__btn" data-popup-open></a>
+        <div class="popupmenu notification-menu__popup">
+          <a href="#" class="popupmenu__close notification-menu__close" data-popup-close=""></a>
+          <div class="notification-menu__item">
+            <div class="notification-menu__item-info">
+              <p class="notification-menu__date">
+                12:30
+              </p>
+              <a href="#" class="notification__menu-title">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur sint aperiam asperiores dolores
+                repellendus, expedita natus, dolorum ut deleniti veritatis vel cum fugiat, a quo!
+              </a>
+              <div class="notification-menu__info">
+                <a href="#" class="notifiaction__menu-link">
+                  Проект 1
+                </a>
+                <a href="#" class="notifiaction__menu-link">
+                  Название таска
+                </a>
+              </div>
+            </div>
+            <a href="#" class="notification__menu-photo personal__photo _ibg">
+              <img src="img/photo-2.png" alt="Photo">
+            </a>
+          </div>
+          <div class="notification-menu__item">
+            <div class="notification-menu__item-info">
+              <p class="notification-menu__date">
+                12:30
+              </p>
+              <a href="#" class="notification__menu-title">
+                Перемещена карточка
+              </a>
+              <div class="notification-menu__info">
+                <a href="#" class="notifiaction__menu-link">
+                  Проект 1
+                </a>
+                <a href="#" class="notifiaction__menu-link">
+                  Проект 1
+                </a>
+                <a href="#" class="notifiaction__menu-link">
+                  Проект 1
+                </a>
+                <a href="#" class="notifiaction__menu-link">
+                  Проект 1
+                </a>
+                <a href="#" class="notifiaction__menu-link">
+                  Название таска
+                </a>
+              </div>
+            </div>
+            <a href="#" class="notification__menu-photo personal__photo _ibg">
+              <img src="img/photo-2.png" alt="Photo">
+            </a>
+          </div>
+          <div class="notification-menu__item">
+            <div class="notification-menu__item-info">
+              <p class="notification-menu__date">
+                12:30
+              </p>
+              <a href="#" class="notification__menu-title">
+                Перемещена карточка
+              </a>
+              <div class="notification-menu__info">
+                <a href="#" class="notifiaction__menu-link">
+                  Проект 1
+                </a>
+                <a href="#" class="notifiaction__menu-link">
+                  Название таска
+                </a>
+              </div>
+            </div>
+            <a href="#" class="notification__menu-photo personal__photo _ibg">
+              <img src="img/photo-2.png" alt="Photo">
+            </a>
+          </div>
+          <div class="notification-menu__item">
+            <div class="notification-menu__item-info">
+              <p class="notification-menu__date">
+                12:30
+              </p>
+              <a href="#" class="notification__menu-title">
+                Перемещена карточка
+              </a>
+              <div class="notification-menu__info">
+                <a href="#" class="notifiaction__menu-link">
+                  Проект 1
+                </a>
+                <a href="#" class="notifiaction__menu-link">
+                  Название таска
+                </a>
+              </div>
+            </div>
+            <a href="#" class="notification__menu-photo personal__photo _ibg">
+              <img src="img/photo-2.png" alt="Photo">
+            </a>
+          </div>
+          <a href="#" class="btn notification-menu__item-btn">
+            Очистить уведомления
           </a>
-          <div class="expandable-menu__popup popupmenu">
-            <a href="#" class="expandable-menu__close popupmenu__close " data-popup-close></a>
-            <a href="#" class="expandable-menu__action btn btn-with-plus">Создать проект</a>
-            <a href="#" class="expandable-menu__action btn btn-with-plus">Создать проект</a>
-            <a href="#" class="expandable-menu__action btn btn-with-plus">Создать проект</a>
+        </div>
+      </div>
+
+      <!-- notification menu  -->
+      <!-- project menu  -->
+
+      <div class="project-menu" data-popup-parent>
+        <a href="#" class="project-menu__btn add-btn" data-popup-open="">
+        </a>
+        <div class="project-menu__popupmenu popupmenu">
+          <a href="#" class="project-menu__close popupmenu__close" data-popup-close></a>
+          <div class="project-menu__header">
+            <div class="project-menu__action">
+              <a href="#">
+                Название длинного большого огромного тяжелого таска
+              </a>
+            </div>
+          </div>
+          <div class="project-menu__popupmenu-body">
+            <label class="project-menu__check check">
+              <input class="project-menu__input check__input" type="checkbox" checked>
+              <span class="project-menu__checkbox check__box"></span>
+              Kanban
+            </label>
+            <label class="project-menu__check check">
+              <input class="project-menu__input check__input" type="checkbox">
+              <span class="project-menu__checkbox check__box"></span>
+              Gantt chart
+            </label>
+            <label class="project-menu__check check">
+              <input class="project-menu__input check__input" type="checkbox">
+              <span class="project-menu__checkbox check__box"></span>
+              Agile
+            </label>
           </div>
         </div>
-        <div class="notification-menu" data-popup-parent>
-          <a href="" class="notification-btn notification-menu__btn" data-popup-open></a>
-          <div class="popupmenu notification-menu__popup">
-            <a href="#" class="popupmenu__close notification-menu__close" data-popup-close=""></a>
-            <div class="notification-menu__item">
-              <div class="notification-menu__item-info">
-                <p class="notification-menu__date">
-                  12:30
-                </p>
-                <a href="#" class="notification__menu-title">
-                  Перемещена карточка
-                </a>
-                <div class="notification-menu__info">
-                  <a href="#" class="notifiaction__menu-link">
-                    Проект 1
-                  </a>
-                  <a href="#" class="notifiaction__menu-link">
-                    Название таска
-                  </a>
-                </div>
-              </div>
-              <a href="#" class="notification__menu-photo personal__photo _ibg">
-                <img src="img/photo-2.png" alt="Photo">
-              </a>
-            </div>
-            <div class="notification-menu__item">
-              <div class="notification-menu__item-info">
-                <p class="notification-menu__date">
-                  12:30
-                </p>
-                <a href="#" class="notification__menu-title">
-                  Перемещена карточка
-                </a>
-                <div class="notification-menu__info">
-                  <a href="#" class="notifiaction__menu-link">
-                    Проект 1
-                  </a>
-                  <a href="#" class="notifiaction__menu-link">
-                    Название таска
-                  </a>
-                </div>
-              </div>
-              <a href="#" class="notification__menu-photo personal__photo _ibg">
-                <img src="img/photo-2.png" alt="Photo">
-              </a>
-            </div>
-            <div class="notification-menu__item">
-              <div class="notification-menu__item-info">
-                <p class="notification-menu__date">
-                  12:30
-                </p>
-                <a href="#" class="notification__menu-title">
-                  Перемещена карточка
-                </a>
-                <div class="notification-menu__info">
-                  <a href="#" class="notifiaction__menu-link">
-                    Проект 1
-                  </a>
-                  <a href="#" class="notifiaction__menu-link">
-                    Название таска
-                  </a>
-                </div>
-              </div>
-              <a href="#" class="notification__menu-photo personal__photo _ibg">
-                <img src="img/photo-2.png" alt="Photo">
-              </a>
-            </div>
-            <div class="notification-menu__item">
-              <div class="notification-menu__item-info">
-                <p class="notification-menu__date">
-                  12:30
-                </p>
-                <a href="#" class="notification__menu-title">
-                  Перемещена карточка
-                </a>
-                <div class="notification-menu__info">
-                  <a href="#" class="notifiaction__menu-link">
-                    Проект 1
-                  </a>
-                  <a href="#" class="notifiaction__menu-link">
-                    Название таска
-                  </a>
-                </div>
-              </div>
-              <a href="#" class="notification__menu-photo personal__photo _ibg">
-                <img src="img/photo-2.png" alt="Photo">
-              </a>
-            </div>
-            <a href="#" class="btn notification-menu__item-btn">
-              Очистить уведомления
+      </div>
+
+      <!-- project menu  -->
+
+      <!-- choose file  -->
+      <div class="choose-file">
+        <div class="choose-file__item">
+          <a href="#" class="file-preview">
+            dox2
+          </a>
+          <div class="choose-file__info">
+            <p class="choose-file__added">
+              Добавлено 3 минуты назад
+            </p>
+            <a href="#" class="choose-file__delete inline-btn">
+              Удалить файл
             </a>
           </div>
         </div>
-
-        <div class="project-menu" data-popup-parent>
-          <a href="#" class="project-menu__btn add-btn" data-popup-open="">
+        <div class="choose-file__btn">
+          <input id="chooseFile" class="choose-file__input" type="file">
+          <a href="#" class="btn btn-with-file">
+            Прикрепить файл
           </a>
-          <div class="project-menu__popupmenu popupmenu">
-            <a href="#" class="project-menu__close popupmenu__close" data-popup-close></a>
-            <div class="project-menu__header">
-              <a href="#" class="project-menu__action">
-                Изменить вид проекта
-              </a>
-            </div>
-            <div class="project-menu__popupmenu-body">
-              <label class="project-menu__check check">
-                <input class="project-menu__input check__input" type="checkbox" checked>
-                <span class="project-menu__checkbox check__box"></span>
-                Kanban
-              </label>
-              <label class="project-menu__check check">
-                <input class="project-menu__input check__input" type="checkbox">
-                <span class="project-menu__checkbox check__box"></span>
-                Gantt chart
-              </label>
-              <label class="project-menu__check check">
-                <input class="project-menu__input check__input" type="checkbox">
-                <span class="project-menu__checkbox check__box"></span>
-                Agile
-              </label>
-            </div>
-          </div>
         </div>
+      </div>
+      <!-- choose file  -->
 
-      </section>
     </main>
   </div>
 

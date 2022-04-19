@@ -44,6 +44,7 @@
 .choices[data-type*=select-one] .choices__input {
   display: block;
   width: 100%;
+  -webkit-appearance: textfield;
   padding: 10px;
   border-bottom: 1px solid #ddd;
   background-color: #fff;

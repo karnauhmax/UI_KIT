@@ -7,12 +7,12 @@ const multiChoices = new Choices(multiple, {
 });
 
 const customSingle = document.querySelectorAll(".custom-single");
-customSingle.forEach(el => {
+customSingle.forEach((el) => {
   new Choices(el);
 });
 
 const customMultiple = document.querySelectorAll(".custom-multiple");
-customMultiple.forEach(el => {
+customMultiple.forEach((el) => {
   new Choices(el);
 });
 
@@ -22,23 +22,22 @@ const customTagsMultiChoices = new Choices(customTagsMultiple, {
 });
 
 // popup
-const openPopupBtns = document.querySelectorAll('[data-popup-open]');
-const closePopupBtns = document.querySelectorAll('[data-popup-close]');
+const openPopupBtns = document.querySelectorAll("[data-popup-open]");
+const closePopupBtns = document.querySelectorAll("[data-popup-close]");
 
-openPopupBtns.forEach(btn => {
-  btn.addEventListener("click", e => {
+openPopupBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
     e.preventDefault();
-    btn.closest('[data-popup-parent]').classList.add('popup-is-open');
+    btn.closest("[data-popup-parent]").classList.add("popup-is-open");
   });
 });
 
-closePopupBtns.forEach(btn => {
-  btn.addEventListener("click", e => {
+closePopupBtns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
     e.preventDefault();
-    btn.closest('[data-popup-parent]').classList.remove('popup-is-open');
+    btn.closest("[data-popup-parent]").classList.remove("popup-is-open");
   });
 });
-
 
 // datepicker
 
@@ -46,9 +45,7 @@ let dpMin, dpMax;
 
 dpMin = new AirDatepicker("#dateMin", {
   dateFormat: "dd, MM, yyyy",
-  onSelect({
-    date
-  }) {
+  onSelect({ date }) {
     dpMax.update({
       minDate: date,
     });
@@ -57,9 +54,7 @@ dpMin = new AirDatepicker("#dateMin", {
 
 dpMax = new AirDatepicker("#dateMax", {
   dateFormat: "dd, MM, yyyy",
-  onSelect({
-    date
-  }) {
+  onSelect({ date }) {
     dpMin.update({
       maxDate: date,
     });
@@ -91,3 +86,19 @@ dpMax = new AirDatepicker("#dateMax", {
 //     },
 //   }
 // );
+
+// input file
+
+const fileInput = document.getElementById("chooseFile");
+let fileName = fileInput.files.length;
+const filePreview = document.querySelector(".file-preview");
+
+fileInput.addEventListener("change", () => {
+  console.log(fileName);
+});
+
+// let reader = new FileReader();
+
+// reader.onload = function (e) {
+//   console.log(fileName);
+// };
